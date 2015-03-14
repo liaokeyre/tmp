@@ -237,4 +237,8 @@ void RSINTR() interrupt 4 using 2
 }
 //this is the end of file
 //this is test file
+<<<<<<< HEAD
 //this is branch master
+=======
+//go------>new branch test1
+>>>>>>> test1
