@@ -1,0 +1,69 @@
+BL51 BANKED LINKER/LOCATER V6.22                                                        01/21/2014  11:59:49  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22, INVOKED BY:
+D:\KEIL C51 V9.00(推荐使用最新)\INSTALL\C51\BIN\BL51.EXE 51_DHT21.obj TO 51_DHT11 RAMSIZE (256)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  51_DHT21.obj (51_DHT21)
+  D:\KEIL C51 V9.00(推荐使用最新)\INSTALL\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  51_DHT11 (51_DHT21)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+            CODE    0003H     000CH     UNIT         ?C_C51STARTUP
+            CODE    000FH     0008H     UNIT         ?PR?MAIN?51_DHT21
+
+
+
+OVERLAY MAP OF MODULE:   51_DHT11 (51_DHT21)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?51_DHT21
+
+
+
+SYMBOL TABLE OF MODULE:  51_DHT11 (51_DHT21)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+
+  -------         MODULE        51_DHT21
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  C:000FH         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  D:0007H         SYMBOL        i
+  -------         ENDDO         
+  C:000FH         LINE#         1
+  C:000FH         LINE#         2
+  C:000FH         LINE#         3
+  C:0011H         LINE#         5
+  C:0011H         LINE#         6
+  C:0011H         LINE#         8
+BL51 BANKED LINKER/LOCATER V6.22                                                      01/21/2014  11:59:49  PAGE 2
+
+
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        51_DHT21
+
+Program Size: data=9.0 xdata=0 code=23
+LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)
